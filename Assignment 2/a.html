@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            td {
+              border: 1px solid black;
+              border-radius: 10px;
+            }
+            </style>
+    </head>
+
+    <body>
+        <form>
+            <table border="1px" style="width:50%">
+                <tr>
+                    <!-- table header-->
+                    <th style="width:40%" hidden>Title</th>
+                    <th hidden>Desc</th>
+                </tr>
+                <tr>
+                    <!-- table data-->
+                    <td style="width:40%">Name</td>
+                    <td align="center"><input type="text" placeholder="Name"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Email</td>
+                    <td align="center"><input type="email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="password" placeholder="****"></td>
+                </tr>
+                <tr>
+                    <td>Birthday</td>
+                    <td align="center"><input type="date" placeholder="20/10/1900"></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td align="center"><input type="number" placeholder="20"></td>
+                </tr>
+                <tr>
+                    <td>Favorite color</td>
+                    <td align="center"><input type="color" value="#FF0000"></td>
+                </tr>
+                <tr>
+                    <td>Do you wear mask or not YARE?</td>
+                    <td align="center"><input type="radio" name="mask"> yes <img src="images/mask.jpeg" width="5%" height="5%">
+                    <br>
+                    <input type="radio" name="mask"> no <img src="images/no.jpeg" width="5%" height="5%">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Favarite fruit</td>
+                    <td align="center">
+                    <input type="checkbox" name="fruit"> apple <img src="images/apple.png" width="5%" height="5%">
+                    <input type="checkbox" name="fruit"> ananas <img src="images/ananas.png" width="5%" height="5%">
+                    <input type="checkbox" name="fruit"> orange <img src="images/orange.png" width="5%" height="5%">
+                    <input type="checkbox" name="fruit"> banana <img src="images/banana.png" width="5%" height="5%">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>Country</td>
+                    <td align="center"><input type="" value="#FF0000"></td>
+                </tr>
+
+                <tr>
+                    <td>Biography</td>
+                    <td align="center"><textarea rows="10">Tell me as you wish...</textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                    <input type="button" value="registration">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

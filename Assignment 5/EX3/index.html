@@ -1,60 +1,167 @@
-<html>
-    <head>
-        <style>
-            body{
-                background-image:linear-gradient(rgb(216, 58, 137), darkblue) ;
-            }
-            form{
-                background-color: white;
-                width: 50%;
-                height: 400;
-                position: absolute;
-                top: 40;
-                left: 25%;
-            }
-            h4{
-                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            }
-            input{
-                background-color: rgba(236, 236, 236, 0.821);
-            }
-            
-        </style>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
 
-    <body>
-        <center>
-        <form>
-            <table border="0.1px" align="center">
-                <h4 align="center">LOGIN</h4>
-                <tr>
-                    <td><img id="img1" src="img/mail.png" width="10" height="10"><input type="text" placeholder="Email"></td>
-                </tr>
-                <tr>
-                    <td><img id="img2" src="img/pass.png" width="10" height="10"><input type="text" placeholder="******"></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"> Remember me</td>
-                </tr>
-                <tr>
-                    <td align="center" id="login">
-                        <button>LOGIN</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center">Or login with</td>
-                </tr>
-                <tr>
-                    <td id="btn1"><button><img src="img/facebook.png" width="15" height="15"><a href="www.facebook.com">Facebook</a></button></td>
-                    <td id="btn2"><button><img src="img/google.png" width="15" height="15"><a href="www.google.com">Google</a></button></td>
-                </tr>
-                <tr>
-                    <td>
-                        Not a member?<a href="">Sign up now</a> 
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </center>
-    </body>
+        body {
+            background: linear-gradient(to bottom, #d16ba5, #86a8e7, #5f5ffb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Login Container */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .login-box {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 320px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            padding-left: 40px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background-color: #f7f7f7;
+            font-size: 16px;
+        }
+
+        .input-box .icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #999;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .remember-me input {
+            margin-right: 10px;
+        }
+
+        .login-btn {
+            background-color: #d16ba5;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #c05a8f;
+        }
+
+        /* Social Login */
+        .social-login {
+            margin-top: 20px;
+        }
+
+        .social-login p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .facebook-btn, .google-btn {
+            background-color: #f7f7f7;
+            color: #333;
+            border: 2px solid #ddd;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .facebook-btn img, .google-btn img {
+            margin-right: 10px;
+        }
+
+        .sign-up-text {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .sign-up-text a {
+            color: #d16ba5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>LOGIN</h2>
+            <form>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required>
+                    <span class="icon">📧</span>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <span class="icon">🔒</span>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+                <button class="login-btn" type="submit">LOGIN</button>
+            </form>
+            <div class="social-login">
+                <p>Or login with</p>
+                <button class="facebook-btn"><img src="facebook-icon.png" alt="Facebook"> Facebook</button>
+                <button class="google-btn"><img src="google-icon.png" alt="Google"> Google</button>
+            </div>
+            <p class="sign-up-text">Not a member? <a href="#">Sign up now</a></p>
+        </div>
+    </div>
+</body>
 </html>

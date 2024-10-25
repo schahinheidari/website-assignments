@@ -1,0 +1,74 @@
+/* Style for the left part */
+#left_part {   
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 560px;
+    top: 250px;
+    border: 10px solid red;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transform: rotate(50deg);
+    transition: all 0.3s ease; /* Smooth transition for any changes */
+}
+
+/* Style for the right part */
+#right_part {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 712px;
+    top: 250px;
+    border: 10px solid red;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transform: rotate(-140deg);
+    transition: all 0.3s ease;
+}
+
+/* Style for the "A" block */
+#A {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    background-color: pink;
+    left: 642px;
+    top: 127px;
+    transform: rotate(-135deg);
+    border-top-left-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Adds a shadow for depth */
+    transition: all 0.3s ease;
+}
+
+/* Style for the "B" block */
+#B {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background-color: pink;
+    left: 601px;
+    top: 82px;
+    border-radius: 80px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Shadow effect */
+    transition: all 0.3s ease;
+}
+
+/* Style for the "C" block */
+#C {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background-color: pink;
+    left: 680px;
+    top: 81px;
+    border-radius: 80px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Shadow effect */
+    transition: all 0.3s ease;
+}
+
+/* Hover effects for a smoother interaction */
+#left_part:hover, #right_part:hover, #A:hover, #B:hover, #C:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+}

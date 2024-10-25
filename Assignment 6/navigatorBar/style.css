@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.navbar ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 18px;
+    display: block;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1.1rem;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff6b6b;
+    transform: translateY(-3px);
+}
+
+.navbar ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    min-width: 150px;
+}
+
+.navbar ul li .dropdown li {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li .dropdown li a.submenu-item {
+    display: block;
+    padding: 12px 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar ul li .dropdown li:last-child a.submenu-item {
+    border-bottom: none;
+}
+
+.navbar ul li .dropdown li a.submenu-item:hover {
+    background-color: #007bff;
+    color: white;
+    border-radius: 3px;
+}
+
+.navbar ul li:hover .dropdown {
+    display: block;
+}
+
+.navbar ul li .dropdown {
+    animation: dropdownFade 0.3s ease-in-out forwards;
+}
+
+.search-container {
+    margin-left: auto;
+    position: relative;
+}
+
+.search {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 1rem;
+    transition: width 0.4s ease, background-color 0.4s ease;
+    width: 180px;
+    outline: none;
+}
+
+.search:focus {
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search::placeholder {
+    color: #888;
+}

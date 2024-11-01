@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+<header class="navbar">
+    <div class="navbar">
+        <a href="#home" class="home-btn">
+          <img src="img/photo.jpg" alt="Home">
+        </a>
+        <nav>
+          <a href="#team">Team</a>
+          <a href="#work">Work</a>
+          <a href="#price">Price</a>
+          <a href="#contact">Contact</a>
+          <div class="dropdown">
+            <a href="#dropdown">Dropdown ▾</a>
+            <div class="dropdown-content">
+              <a href="#link1">Link 1</a>
+              <a href="#link2">Link 2</a>
+              <a href="#link3">Link 3</a>
+            </div>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">🔍</button>
+          </div>
+        </nav>
+      </div>
+      
+  </header>
+  
+  
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="img/photo1.jpeg" alt="Hero Image">
+    <h1>LEARN STRONGHOLD</h1>
+  </section>
+
+  <!-- Our Team Section -->
+  <section class="team">
+    <h2>OUR TEAM</h2>
+    <p>Meet the team - our office Stronghold:</p>
+    <div class="team-members">
+      <div class="member">
+        <img src="img/rat.jpeg" alt="Johnny Walker">
+        <h3>RAT</h3>
+        <p>Web Designer</p>
+      </div>
+      <div class="member">
+        <img src="img/pig.jpeg" alt="Rebecca Flex">
+        <h3>PIG</h3>
+        <p>Support</p>
+      </div>
+      <div class="member">
+        <img src="img/wolf.jpeg" alt="Jan Ringo">
+        <h3>WOLF</h3>
+        <p>Boss man</p>
+      </div>
+      <div class="member">
+        <img src="img/richard.jpeg" alt="Kai Ringo">
+        <h3>RICHARD</h3>
+        <p>Fixer</p>
+      </div>
+      <div class="member">
+        <img src="img/saladin.jpeg" alt="Kai Ringo">
+        <h3>SALADIN</h3>
+        <p>Manager</p>
+      </div>
+      <div class="member">
+        <img src="img/caliph.jpeg" alt="Kai Ringo">
+        <h3>CALIPH</h3>
+        <p>Back-end</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Work Section -->
+  <section class="work">
+    <div class="projects">
+        <div id="project1">
+            <h2>Our Work</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="project">
+            <img src="img/photo2.jpeg" alt="Montain 1">
+            <h3>Montain 1</h3>
+            <p>Description</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="project">
+            <img src="img/photo3.jpeg" alt="Montain 2">
+            <h3>Montain 2</h3>
+            <p>Description</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="project">
+            <img src="img/photo4.jpeg" alt="Montain 3">
+            <h3>Montain 3</h3>
+            <p>Description</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Floating Action Button -->
+  <button class="floating-btn">+</button>
+
+  <!-- Pricing Section -->
+<section class="pricing">
+    <h2>PRICING</h2>
+    <p>Choose a pricing plan that fits your needs.</p>
+    <div class="pricing-table">
+        <div class="plan basic">
+            <h3>Basic</h3>
+            <ul>
+                <li><strong>10GB</strong> storage</li>
+                <li>10 Emails</li>
+                <li>10 Domains</li>
+                <li>Endless Support</li>
+            </ul>
+            <p class="price">$10 <span>per month</span></p>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+        <div class="plan pro">
+            <h3>Pro</h3>
+            <ul>
+                <li><strong>25GB</strong> storage</li>
+                <li>25 Emails</li>
+                <li>25 Domains</li>
+                <li>Endless Support</li>
+            </ul>
+            <p class="price">$25 <span>per month</span></p>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+        <div class="plan premium">
+            <h3>Premium</h3>
+            <ul>
+                <li><strong>50GB</strong> storage</li>
+                <li>50 Emails</li>
+                <li>50 Domains</li>
+                <li>Endless Support</li>
+            </ul>
+            <p class="price">$50 <span>per month</span></p>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section class="contact">
+    <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Address</p>
+        <p>SALADIN Castle.</p>
+        <p>📍Jerusalem, Middle East</p>
+        <p>📞 +00 1515151515</p>
+        <p>📧 stronghold@crusader.com</p>
+    </div>
+    <div class="contact-form">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label>
+                <input type="checkbox" name="like" checked> I Like it!
+            </label>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="social-media">
+        <p>Follow Us</p>
+        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="img/google.png" alt="Google"></a>
+        <a href="#"><img src="img/linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <p>STRONGHOLD</p>
+</footer>
+
+</body>
+</html>

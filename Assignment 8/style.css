@@ -1,0 +1,404 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+  
+.home-btn img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+  
+.home-btn img:hover {
+    transform: scale(1.1);
+}
+  
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+  
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+  
+.navbar nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+  
+.dropdown {
+    position: relative;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 5px;
+    z-index: 1;
+    padding: 1rem;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+  /* Search Bar */
+.search-bar {
+    display: flex;
+    margin-left: auto;
+}
+  
+.search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #444;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    background-color: #f0f0f0;
+}
+  
+.search-bar button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+  
+.search-bar button:hover {
+    background-color: #555;
+}
+  
+  /* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+  
+.hero img {
+    width: 100%;
+    height: 250px;
+}
+  
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+  
+  /* Our Team Section */
+.team {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+}
+  
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+  
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+}
+.member {
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* انیمیشن برای تغییرات */
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* سایه اولیه */
+    transition: transform 0.3s, box-shadow 0.3s; /* انیمیشن هنگام hover */
+}
+
+.member img:hover {
+    transform: scale(1.1); /* انیمیشن بزرگ‌تر شدن */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* سایه عمیق‌تر هنگام hover */
+}
+
+  
+.member img:hover {
+    transform: scale(1.1);
+}
+  
+  /* Our Work Section */
+.work {
+    padding: 2rem 1rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+  
+.work h2 {
+    margin-bottom: 1rem;
+}
+  
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+  
+.project {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+  
+.project img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+  
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* Floating Button */
+.floating-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+    
+.floating-btn:hover {
+    transform: rotate(45deg);
+  }
+  
+   /* Pricing Section */
+.pricing {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.pricing h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.pricing p {
+    margin-bottom: 2rem;
+}
+
+.pricing-table {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    
+}
+
+
+.plan {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* سایه اولیه */
+    transition: transform 0.3s, box-shadow 0.3s; /* انیمیشن برای تغییرات */
+}
+.plan:hover {
+    transform: translateY(-5px); /* انیمیشن حرکت به بالا */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* سایه عمیق‌تر هنگام hover */
+}
+
+.plan h3 {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.plan li {
+    margin: 0.5rem 0;
+}
+
+.price {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #888;
+}
+
+.signup-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: #45a049;
+}
+
+  
+  /* Contact Section */
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background-color: #f0f0f0;
+}
+  
+.contact-info {
+    text-align: left;
+}
+  
+.contact-form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+.contact-form label {
+    margin-top: 1rem;
+    display: block;
+}
+  
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.contact-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.contact-form button:hover {
+    background-color: #555;
+}
+  
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+  
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+  
+footer .social-media img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+  
+footer p {
+    color: #ccc;
+}
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .pricing-table {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+@media (max-width: 480px) {
+    .pricing-table {
+        flex-direction: column;
+      }
+
+    .projects {
+        flex-direction: column;
+    }
+    
+    .team-members {
+        grid-template-columns: 1fr;
+      }
+    
+    .navbar nav {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .contact {
+      grid-template-columns: 1fr;
+    }
+}
+  

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Neumorphic design with slider and full layout.">
+  <meta name="author" content="Shahin HEIDARI">
+  <title>Uber! EATS Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="logo">Uber! Eats</div>
+      <li>
+        <button class="button"><a href="registration.html">Sign up</a></button>
+        <button class="button"><a href="login.html">Login</a></button>
+      </li>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Commande en ligne de Épiceries
+          <span class="text-container">
+            <div class="rotating-text">
+              <span>Fruit</span>
+              <span>Pain</span>
+              <span>Riz</span>
+              <span>Pizza</span>
+              <span>Viande</span>
+              <span>Yaourt</span>
+            </div>
+          </span>
+        </h1>
+        <p>Commande en ligne de nourriture, fruits, pain, friandises et...</p>
+        <div class="search-box">
+          <input type="text" class="input" placeholder="Choisissez d'abord votre adresse">
+          <button class="button">Recherche</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="img/pizza.jpg" alt="Delicious pizza">
+      </div>
+    </section>
+
+    <!-- Slider Section -->
+    <section class="slider">
+      <div class="slider-container">
+        <button class="slider-arrow left" onclick="scrollSlider(-1)">&lt;</button>
+        <div class="slider-content">
+          <!-- Slider Items -->
+          <div class="slider-item">
+            <div class="slider-circle"><img src="img/restaurant.jpg" alt="restaurant"></div>
+            <div class="slider-label">Restaurant</div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-circle"><img src="img/cofee.jpg" alt="coffee"></div>
+            <div class="slider-label">Café</div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-circle"><img src="img/cake.jpg" alt="cake"></div>
+            <div class="slider-label">Cake</div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-circle"><img src="img/vegetable.jpg" alt="vegetable"></div>
+            <div class="slider-label">Légume</div>
+          </div>
+        </div>
+        <button class="slider-arrow right" onclick="scrollSlider(1)">&gt;</button>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <h2>Catégories</h2>
+      <div class="category-grid">
+        <!-- Example Category Items -->
+        <div class="category-card">
+            <img src="img/quiche-lorraine.jpg" alt="Quiche Lorraine">
+            <div class="category-label">Quiche Lorraine</div>
+        </div>
+        <div class="category-card">
+            <img src="img/escargot.jpg" alt="Escargot">
+            <div class="category-label">Escargot</div>
+        </div>
+        <div class="category-card">
+            <img src="img/frog-leg.jpg" alt="frog leg">
+            <div class="category-label">Frog Leg</div>
+        </div>
+        <div class="category-card">
+            <img src="img/Ratatouille.jpg" alt="Ratatouille">
+            <div class="category-label">Ratatouille</div>
+        </div>
+        <div class="category-card">
+            <img src="img/Salade_niçoise.jpg" alt="Salade niçoise">
+            <div class="category-label">Salade Niçoise</div>
+        </div>
+        <div class="category-card">
+            <img src="img/bouillabaisse.jpg" alt="Bouillabaisse">
+            <div class="category-label">Bouillabaisse</div>
+        </div>
+        <div class="category-card">
+            <img src="img/Cassoulet.jpg" alt="Cassoulet">
+            <div class="category-label">Cassoulet</div>
+        </div>
+        <div class="category-card">
+            <img src="img/Boeuf_bourguignon.jpg" alt="Boeuf bourguignon">
+            <div class="category-label">Boeuf bourguignon</div>
+        </div>
+        <div class="category-card">
+            <img src="img/Confit_canard.jpg" alt="Confit de canard">
+            <div class="category-label">Confit de canard</div>
+        </div>
+        <div class="category-card">
+            <img src="img/steak-tartare.jpg" alt="Steak Tartare">
+            <div class="category-label">Steak Tartare</div>
+        </div>
+        <div class="category-card">
+            <img src="img/Coq-vin.jpg" alt="Coq au vin">
+            <div class="category-label">Coq au vin</div>
+        </div>
+        <div class="category-card">
+            <img src="img/Flamiche.jpg" alt="Flamiche">
+            <div class="category-label">Flamiche</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download App Section -->
+    <section class="app">
+      <div class="app-info">
+        <h2>Uber App</h2>
+        <p>Avec l'application Snapfood, vous pouvez facilement commander dans les restaurants et supermarchés près de chez vous en quelques clics simples.</p>
+      </div>
+      <div class="number-box">
+        <button class="button">Lien</button>
+        <input type="text" class="input2" placeholder="Tapez votre numéro">
+      </div>
+      <div class="app-image">
+        <img src="img/uber.jpg" alt="App Screenshots">
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-item">
+        <h3>Uber! Eats</h3>
+        <p>Commande en ligne de nourriture, fruits, pain, friandises et...</p>
+      </div>
+      <div class="footer-item">
+        <h3>Liens rapides</h3>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Catégories</a></li>
+          <li><a href="#">Application</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3>Suivez-nous</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Uber! Eats. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
